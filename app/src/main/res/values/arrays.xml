@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tipuri_avion">
+        <item>Pasageri</item>
+        <item>Marfa</item>
+        <item>Militar</item>
+        <item>Privat</item>
+    </string-array>
+</resources>
