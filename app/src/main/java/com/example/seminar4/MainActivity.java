@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             new ActivityResultContracts.StartActivityForResult(),
             result -> {
                 if (result.getResultCode() == RESULT_OK && result.getData() != null) {
-                    Avion avion = (Avion) result.getData().getSerializableExtra(CHEIE_AVION);
+                    Avion avion = (Avion) result.getData().getParcelableExtra(CHEIE_AVION);
                     if (avion != null) {
                         listaAvioane.add(avion);
                         actualizeazaRezultat();
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             result -> {
                 if (result.getResultCode() == RESULT_OK && result.getData() != null) {
                     ArrayList<Avion> listaNoua =
-                            (ArrayList<Avion>) result.getData().getSerializableExtra(CHEIE_LISTA);
+                             result.getData().getParcelableArrayListExtra(CHEIE_LISTA);
                     if (listaNoua != null) {
                         listaAvioane = listaNoua;
                         actualizeazaRezultat();
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ListaAvioaneActivity.class);
-                intent.putExtra(CHEIE_LISTA, listaAvioane);
+                intent.putParcelableArrayListExtra(CHEIE_LISTA, listaAvioane);
                 launcherLista.launch(intent);
             }
         });

@@ -1,8 +1,11 @@
 package com.example.seminar4;
 
-import java.io.Serializable;
+import android.os.Parcel;
+import android.os.Parcelable;
 
-public class Avion implements Serializable {
+
+
+public class Avion implements Parcelable {
     private String companie;
     private String model;
     private String tip;
@@ -21,6 +24,44 @@ public class Avion implements Serializable {
         this.international = international;
         this.rating = rating;
     }
+
+    protected Avion(Parcel in) {
+        companie = in.readString();
+        model = in.readString();
+        tip = in.readString();
+        clasa = in.readString();
+        wifi = in.readByte() != 0;
+        international = in.readByte() != 0;
+        rating = in.readFloat();
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(companie);
+        dest.writeString(model);
+        dest.writeString(tip);
+        dest.writeString(clasa);
+        dest.writeByte((byte) (wifi ? 1 : 0));
+        dest.writeByte((byte) (international ? 1 : 0));
+        dest.writeFloat(rating);
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    public static final Creator<Avion> CREATOR = new Creator<Avion>() {
+        @Override
+        public Avion createFromParcel(Parcel in) {
+            return new Avion(in);
+        }
+
+        @Override
+        public Avion[] newArray(int size) {
+            return new Avion[size];
+        }
+    };
 
     public String getCompanie() { return companie; }
     public void setCompanie(String companie) { this.companie = companie; }

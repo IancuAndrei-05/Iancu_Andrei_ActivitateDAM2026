@@ -22,7 +22,7 @@ public class ListaAvioaneActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_avioane);
 
-        listaAvioane = (ArrayList<Avion>) getIntent().getSerializableExtra(MainActivity.CHEIE_LISTA);
+        listaAvioane =  getIntent().getParcelableArrayListExtra(MainActivity.CHEIE_LISTA);
         if (listaAvioane == null) {
             listaAvioane = new ArrayList<>();
         }
@@ -49,7 +49,7 @@ public class ListaAvioaneActivity extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent();
-                intent.putExtra(MainActivity.CHEIE_LISTA, listaAvioane);
+                intent.putParcelableArrayListExtra(MainActivity.CHEIE_LISTA, listaAvioane);
                 setResult(RESULT_OK, intent);
                 return true;
             }
