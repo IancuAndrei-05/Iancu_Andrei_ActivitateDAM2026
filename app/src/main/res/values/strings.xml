@@ -1,3 +1,66 @@
 <resources>
-    <string name="app_name">Seminar 4 Avion</string>
+    <string name="app_name">Laborator8</string>
+
+
+    <string name="titlu_second">Activitatea 2 (Lab 2-3)</string>
+    <string name="descriere_second">Butonul trimite un mesaj si doua valori intregi (12 si 30) catre activitatea 3 printr-un Bundle.</string>
+    <string name="deschide_activitate3">Deschide activitatea 3</string>
+    <string name="aplicatie_avioane">Aplicatia Avioane (Lab 4-6)</string>
+    <string name="titlu_third">Activitatea 3 (Lab 2-3)</string>
+    <string name="trimite_inapoi">Trimite inapoi mesaj + suma</string>
+
+    <!-- Main -->
+    <string name="titlu_main">Avioane</string>
+    <string name="adauga_avion">Adauga avion</string>
+    <string name="adauga_avion_ai">Adauga avion (design AI)</string>
+    <string name="lista_avioane">Lista avioane</string>
+    <string name="ultimul_avion">Ultimul avion adaugat:</string>
+    <string name="niciun_avion">Niciun avion adaugat inca.</string>
+    <string name="numar_avioane">Avioane in lista: %1$d</string>
+
+    <!-- Adaugare / editare -->
+    <string name="titlu_adaugare">Adauga un avion</string>
+    <string name="titlu_editare">Modifica avionul</string>
+    <string name="model">Model</string>
+    <string name="hint_model">ex: A320neo</string>
+    <string name="producator">Producator</string>
+    <string name="nr_locuri">Numar locuri</string>
+    <string name="hint_locuri">ex: 180</string>
+    <string name="tip_avion">Tip avion</string>
+    <string name="tip_pasageri">Pasageri</string>
+    <string name="tip_cargo">Cargo</string>
+    <string name="tip_militar">Militar</string>
+    <string name="are_wifi">Are Wi-Fi la bord</string>
+    <string name="in_serviciu_switch">In serviciu</string>
+    <string name="rating">Rating</string>
+    <string name="optiuni">Optiuni</string>
+    <string name="detalii">Detalii</string>
+    <string name="salveaza">Salveaza</string>
+    <string name="salveaza_modificari">Salveaza modificarile</string>
+    <string name="salvat">Salvat!</string>
+    <string name="eroare_model">Introduceti modelul</string>
+    <string name="eroare_locuri">Introduceti un numar valid</string>
+
+    <!--  lista -->
+    <string name="lista_goala">Lista este goala..</string>
+    <string name="sfat_lista">Apasa pentru a modifica · Apasa lung pentru a sterge(to-do)</string>
+    <string name="item_titlu">%1$s %2$s</string>
+    <string name="item_detalii">%1$s · %2$d locuri · %3$s</string>
+    <string name="cu_wifi">Wi-Fi</string>
+    <string name="fara_wifi">fara Wi-Fi</string>
+    <string name="in_serviciu">IN SERVICIU</string>
+    <string name="la_sol">LA SOL</string>
+
+    <!-- lab8 -->
+    <string name="titlu_imagini">Imagini avioane</string>
+    <string name="descriere_imagine">Imagine avion</string>
+
+    <string-array name="producatori">
+        <item>AirBus</item>
+        <item>Boeing</item>
+        <item>Embraer</item>
+        <item>Bombardier</item>
+        <item>ATR</item>
+        <item>COMAC</item>
+    </string-array>
 </resources>

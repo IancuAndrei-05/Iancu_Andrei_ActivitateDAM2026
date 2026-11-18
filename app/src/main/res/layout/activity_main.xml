@@ -1,46 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:padding="16dp">
+    tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Aplicatie Avioane"
-        android:textSize="24sp"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/btnAdauga"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Adauga avion" />
+        android:orientation="vertical"
+        android:padding="24dp">
 
-    <Button
-        android:id="@+id/btnAdaugaAI"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Adauga avion (design nou)" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titlu_main"
+            android:textAppearance="?attr/textAppearanceHeadlineMedium" />
 
-    <Button
-        android:id="@+id/btnLista"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Vezi lista avioane" />
+        <TextView
+            android:id="@+id/tvNumarAvioane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            tools:text="Avioane in lista: 0" />
 
-    <TextView
-        android:id="@+id/tvRezultat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Niciun avion adaugat"
-        android:textSize="16sp" />
+        <Button
+            android:id="@+id/btnAdaugaAvion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/adauga_avion" />
 
+        <Button
+            android:id="@+id/btnAdaugaAvionAI"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/adauga_avion_ai" />
+
+        <Button
+            android:id="@+id/btnListaAvioane"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/lista_avioane" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/ultimul_avion"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvUltimulAvion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/niciun_avion" />
+
+        <Button
+            android:id="@+id/btnPozeAvioane"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Afiseaza Poza"
+            />
+    </LinearLayout>
 </LinearLayout>

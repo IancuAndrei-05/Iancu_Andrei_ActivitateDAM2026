@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -10,20 +10,33 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme._1081_Seminar04">
+        android:theme="@style/Theme.Laborator8">
+
+        <!-- Lab 2-3, pct. 5: noua activitate este lansata la deschiderea aplicatiei -->
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:windowSoftInputMode="adjustResize">
+            android:name=".SecondActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddAvionActivity" />
-        <activity android:name=".AddAvionAIActivity" />
+        <activity android:name=".ThirdActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".AddAvionActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".AddAvionAIActivity"
+            android:windowSoftInputMode="adjustResize" />
         <activity android:name=".ListaAvioaneActivity" />
+        <activity
+            android:name=".ListaAvioane"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

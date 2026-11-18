@@ -22,6 +22,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Seminar4"
+rootProject.name = "Laborator8"
 include(":app")
  

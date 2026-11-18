@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.seminar4"
+    namespace = "com.example.laborator8"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.example.seminar4"
+        applicationId = "com.example.laborator8"
         minSdk = 24
         targetSdk = 37
         versionCode = 1
@@ -33,12 +33,11 @@ android {
 }
 
 dependencies {
-    implementation(libs.androidx.activity.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.androidx.constraintlayout)
-    implementation(libs.androidx.core.ktx)
+    implementation(libs.activity.ktx)
+    implementation(libs.appcompat)
+    implementation(libs.constraintlayout)
     implementation(libs.material)
     testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.espresso.core)
+    androidTestImplementation(libs.ext.junit)
 }
