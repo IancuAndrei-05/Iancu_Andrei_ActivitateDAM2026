@@ -54,6 +54,8 @@
     <!-- lab8 -->
     <string name="titlu_imagini">Imagini avioane</string>
     <string name="descriere_imagine">Imagine avion</string>
+    <string name="poze_avioane">Poze avioane</string>
+    <string name="link_lipsa">Link-ul paginii nu este setat</string>
 
     <string-array name="producatori">
         <item>AirBus</item>

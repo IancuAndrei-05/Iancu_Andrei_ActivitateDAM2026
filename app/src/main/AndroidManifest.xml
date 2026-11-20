@@ -33,6 +33,7 @@
             android:name=".AddAvionAIActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity android:name=".ListaAvioaneActivity" />
+        <activity android:name=".WebViewActivity" />
         <activity
             android:name=".ListaAvioane"
             android:exported="false"
